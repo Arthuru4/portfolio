@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "./../../components/Layout";
 
-const LibraryPage = () => {
+const ContactsPage = () => {
   return (
     <Layout>
       <div className={"content"}>
-        <div className={"t1"}>Library</div>
+        <div className={"t1"}>Contacts</div>
       </div>
     </Layout>
   );
 };
 
-export default LibraryPage;
+export default ContactsPage;

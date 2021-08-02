@@ -1,22 +1,22 @@
 import HomePage from "../pages/homePage";
 import NoMatchPage from "../pages/noMatchPage";
-import TodosPage from "../pages/todosPage";
-import LibraryPage from "../pages/libraryPage";
+import ContactsPage from "../pages/contactsPage";
+import NotesPage from "../pages/notesPage";
 
 export const HomeRoute = {
   component: HomePage,
   exact: true,
   path: "/",
 };
-export const TodosRoute = {
-  component: TodosPage,
+export const NotesRoute = {
+  component: NotesPage,
   exact: true,
-  path: "/marks",
+  path: "/notes",
 };
-export const LibraryRoute = {
-  component: LibraryPage,
+export const ContactsRoute = {
+  component: ContactsPage,
   exact: true,
-  path: "/library",
+  path: "/contacts",
 };
 
 export const NoMatchRoute = {

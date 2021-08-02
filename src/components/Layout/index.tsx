@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import { RouteComponentProps, withRouter } from "react-router-dom";
-import { HomeRoute, LibraryRoute, TodosRoute } from "../../routes";
+import { HomeRoute, ContactsRoute, NotesRoute } from "../../routes";
 
 interface IProps
   extends React.HTMLAttributes<HTMLElement>,
@@ -22,16 +22,16 @@ const LayoutComponent = (props: IProps) => {
             Home
           </div>
           <div
-            onClick={() => history.push(TodosRoute.path)}
-            className={`nav-btn ${item === TodosRoute.path ? "active" : ""}`}
+            onClick={() => history.push(NotesRoute.path)}
+            className={`nav-btn ${item === NotesRoute.path ? "active" : ""}`}
           >
-            Todos
+            Notes
           </div>
           <div
-            onClick={() => history.push(LibraryRoute.path)}
-            className={`nav-btn ${item === LibraryRoute.path ? "active" : ""}`}
+            onClick={() => history.push(ContactsRoute.path)}
+            className={`nav-btn ${item === ContactsRoute.path ? "active" : ""}`}
           >
-            Library
+            Contacts
           </div>
         </nav>
       </header>

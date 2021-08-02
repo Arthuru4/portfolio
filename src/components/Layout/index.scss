@@ -39,6 +39,9 @@ $blue-color: #4e7396;
 
   justify-content: space-between;
 }
+.flex {
+  @extend %flex;
+}
 
 header {
   height: 48px;

@@ -6,8 +6,8 @@ const RouterComponent = () => {
     return (
         <Switch>
             <Route {...routes.HomeRoute} />
-            <Route {...routes.TodosRoute} />
-            <Route {...routes.LibraryRoute} />
+            <Route {...routes.NotesRoute} />
+            <Route {...routes.ContactsRoute} />
             <Route {...routes.NoMatchRoute} />
         </Switch>
     );
