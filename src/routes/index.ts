@@ -11,7 +11,7 @@ export const HomeRoute = {
 export const NotesRoute = {
   component: NotesPage,
   exact: true,
-  path: "/notes",
+  path: "/faq",
 };
 export const ContactsRoute = {
   component: ContactsPage,

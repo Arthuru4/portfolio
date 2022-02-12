@@ -5,110 +5,134 @@ import "./index.scss";
 
 const techList = [
   {
-    "text": "JS",
-    "logoUrl": ""
+    text: "JS",
+    logoUrl: "",
   },
   {
-    "text": "CSS SASS SCSS LESS",
-    "logoUrl": ""
+    text: "CSS SASS SCSS LESS",
+    logoUrl: "",
   },
   {
-    "text": "React",
-    "logoUrl": ""
+    text: "React",
+    logoUrl: "",
   },
   {
-    "text": "TypeScript",
-    "logoUrl": ""
+    text: "TypeScript",
+    logoUrl: "",
   },
   {
-    "text": "mobX",
-    "logoUrl": ""
+    text: "mobX",
+    logoUrl: "",
   },
   {
-    "text": "NodeJS",
-    "logoUrl": ""
+    text: "NodeJS",
+    logoUrl: "",
   },
   {
-    "text": "Redux",
-    "logoUrl": ""
+    text: "Redux",
+    logoUrl: "",
   },
   {
-    "text": "antD",
-    "logoUrl": ""
+    text: "antD",
+    logoUrl: "",
   },
   {
-    "text": "materialUI",
-    "logoUrl": ""
+    text: "materialUI",
+    logoUrl: "",
   },
   {
-    "text": "biz-charts",
-    "logoUrl": ""
+    text: "Word Press",
+    logoUrl: "",
   },
   {
-    "text": "Docker",
-    "logoUrl": ""
+    text: "Digital ocean",
+    logoUrl: "",
   },
   {
-    "text": "GitLab",
-    "logoUrl": ""
+    text: "Cloudflare",
+    logoUrl: "",
   },
   {
-    "text": "Bitbucket",
-    "logoUrl": ""
+    text: "Apache",
+    logoUrl: "",
   },
   {
-    "text": "Jira",
-    "logoUrl": ""
+    text: "Nginx",
+    logoUrl: "",
   },
   {
-    "text": "Jenkins",
-    "logoUrl": ""
+    text: "biz-charts",
+    logoUrl: "",
   },
   {
-    "text": "Vue",
-    "logoUrl": ""
+    text: "Docker",
+    logoUrl: "",
   },
   {
-    "text": "Chrome extensions",
-    "logoUrl": ""
+    text: "GitLab",
+    logoUrl: "",
   },
   {
-    "text": "Phaser v2.6",
-    "logoUrl": ""
+    text: "Bitbucket",
+    logoUrl: "",
   },
   {
-    "text": "JQuery",
-    "logoUrl": ""
+    text: "Jira",
+    logoUrl: "",
   },
   {
-    "text": "Bash scripts",
-    "logoUrl": ""
+    text: "Jenkins",
+    logoUrl: "",
   },
   {
-    "text": "Spring framework",
-    "logoUrl": ""
+    text: "Vue",
+    logoUrl: "",
   },
   {
-    "text": "Gradle",
-    "logoUrl": ""
+    text: "Chrome extensions",
+    logoUrl: "",
   },
   {
-    "text": "Rabbit MQ",
-    "logoUrl": ""
+    text: "Phaser v2.6",
+    logoUrl: "",
   },
   {
-    "text": "MySQL",
-    "logoUrl": ""
+    text: "JQuery",
+    logoUrl: "",
   },
   {
-    "text": "C(long time ago)",
-    "logoUrl": ""
+    text: "Bash scripts",
+    logoUrl: "",
   },
   {
-    "text": "C++(long time ago)",
-    "logoUrl": ""
+    text: "Spring framework",
+    logoUrl: "",
   },
-]
+  {
+    text: "Gradle",
+    logoUrl: "",
+  },
+  {
+    text: "Rabbit MQ",
+    logoUrl: "",
+  },
+  {
+    text: "MySQL",
+    logoUrl: "",
+  },
+  {
+    text: "MongoDB",
+    logoUrl: "",
+  },
+  {
+    text: "C(long time ago)",
+    logoUrl: "",
+  },
+  {
+    text: "C++(long time ago)",
+    logoUrl: "",
+  },
+];
 const HomePage = observer(() => {
   return (
     <Layout>
@@ -168,7 +192,22 @@ const HomePage = observer(() => {
           <div className={"career-item flex"}>
             <i className="ri-checkbox-blank-circle-fill icon" />
             <div>
-              <i className={"t3 color-brown tab-1"}>may 2020 - 01.08.2021</i>
+              <i className={"t3 color-brown tab-1"}>aug 2021 - till now</i>
+              <div className={"t2 bsl-3 tab-1 color-yellow"}>
+                Saldo Apps:{" "}
+                <span className={"color-blue"}> Front end engineer</span>
+              </div>
+              <div className={"t3 bsl-2 tab-2"}>
+                Single web developer on few projects. <br />
+                Creating/supporting products mostly based on React, mobx, TS, a
+                little bit Word press.
+              </div>
+            </div>
+          </div>
+          <div className={"career-item flex"}>
+            <i className="ri-checkbox-blank-circle-line icon" />
+            <div>
+              <i className={"t3 color-brown tab-1"}>may 2020 - aug 2021</i>
               <div className={"t2 bsl-3 tab-1 color-yellow"}>
                 Magora systems:{" "}
                 <span className={"color-blue"}> Lead web developer</span>
@@ -205,14 +244,15 @@ const HomePage = observer(() => {
               </div>
               <div className={"t3 bsl-2 tab-2"}>
                 Develop and support several big apps with team on JS native,
-                React TSX, Vue, Node, Groovy, Phaser v2.6 and others(in technologies).
+                React TSX, Vue, Node, Groovy, Phaser v2.6 and others(in
+                technologies).
               </div>
             </div>
           </div>
           <div className={"career-item flex"}>
             <i className="ri-checkbox-blank-circle-line icon" />
             <div>
-              <i className={"t3 color-brown tab-1"}>2017 - february 2018</i>
+              <i className={"t3 color-brown tab-1"}>2016 - february 2018</i>
               <div className={"t2 bsl-3 tab-1 color-yellow"}>
                 Freelance: <span className={"color-blue"}> Web developer</span>{" "}
               </div>
@@ -234,7 +274,12 @@ const HomePage = observer(() => {
           </div>
           <div className={"tech"}>
             {techList.map((el, index) => (
-                <div key={el.text} className={`${index%2 ? 'color-yellow' : 'color-blue'}`}>{el.text}</div>
+              <div
+                key={el.text}
+                className={`${index % 2 ? "color-yellow" : "color-blue"}`}
+              >
+                {el.text}
+              </div>
             ))}
           </div>
           <br />
@@ -244,6 +289,13 @@ const HomePage = observer(() => {
           <div>
             Ukrainian(native), Russian(native), English(pre-intermediate)
           </div>
+        </div>
+        <div className={"divider"} />
+        <div>
+          <div className={"t1 bsl-2 color-blue cursor-pointer"}>
+            <u>Hobbies: </u>
+          </div>
+          <div>Yoga, Health care, Financial education</div>
         </div>
       </div>
     </Layout>

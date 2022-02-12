@@ -25,7 +25,7 @@ const LayoutComponent = (props: IProps) => {
             onClick={() => history.push(NotesRoute.path)}
             className={`nav-btn ${item === NotesRoute.path ? "active" : ""}`}
           >
-            Notes
+            FAQ for recruiters
           </div>
           <div
             onClick={() => history.push(ContactsRoute.path)}
